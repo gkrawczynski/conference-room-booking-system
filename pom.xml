@@ -73,7 +73,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency>git
 
         <dependency>
             <groupId>org.projectlombok</groupId>
