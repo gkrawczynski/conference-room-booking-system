@@ -14,6 +14,7 @@ import javax.validation.constraints.Size;
 @ToString
 @Table(name = "Rooms")
 public class Room {
+    @Id
     @Column(columnDefinition="TEXT", nullable = false, unique = true)
     @Length(max=50)
     private String name;

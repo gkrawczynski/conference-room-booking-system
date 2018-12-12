@@ -17,6 +17,7 @@ public class User {
     @Column(columnDefinition="TEXT", length = 100, nullable = false)
     @Length(max=100)
     private String surname;
+    @Id
     @Column(columnDefinition="TEXT", length = 100, nullable = false, unique = true)
     @Length(max=100)
     private String login;
