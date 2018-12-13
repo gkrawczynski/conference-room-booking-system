@@ -5,11 +5,12 @@ import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
 @ToString
-@Table(name="Users")
+@Table(name = "Users")
 public class User {
     @Column(columnDefinition="TEXT", nullable = false)
     @Length(max=50)
@@ -25,4 +26,7 @@ public class User {
     @Length(min=6, max=100)
     private String password;
 
+    @OneToMany
+    @JoinColumn(name = "room_name")
+    private List<Room> rooms;
 }
