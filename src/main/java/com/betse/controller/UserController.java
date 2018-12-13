@@ -39,6 +39,12 @@ public class UserController {
         return "user/ist-page";
     }
 
+    @GetMapping("/remove/{login}")
+    public String remove(@PathVariable String login) {
+        userRepository.delete(login);
+        return "redirect:/user/list";
+    }
+
     @GetMapping("/add")
     public String add(Model model){
         model.addAttribute("user", new User());
