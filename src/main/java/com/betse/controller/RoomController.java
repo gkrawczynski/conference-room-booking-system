@@ -1,5 +1,5 @@
 package com.betse.controller;
-
+/*
 import com.betse.entity.Room;
 import com.betse.repository.RoomRepository;
 import com.betse.storage.StorageService;
@@ -66,3 +66,4 @@ public class RoomController {
         return "redirect:/room/list";
     }
 }
+*/

@@ -1,13 +1,4 @@
-com/betse/repository/RoomRepository.class
 com/betse/BookingApplication.class
-com/betse/storage/StorageService.class
-com/betse/service/SpringDataUserDetailsService.class
-com/betse/service/UserService.class
-com/betse/service/UserServiceImpl.class
-com/betse/repository/UserRepository.class
-com/betse/entity/Room.class
-com/betse/storage/StorageProperties.class
-com/betse/controller/UserController.class
-com/betse/config/SecurityConfig.class
+com/betse/entity/Student.class
 com/betse/controller/HomeController.class
 com/betse/entity/User.class

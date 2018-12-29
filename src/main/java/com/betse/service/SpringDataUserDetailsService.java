@@ -1,5 +1,5 @@
 package com.betse.service;
-
+/*
 import com.betse.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -31,5 +31,5 @@ public class SpringDataUserDetailsService implements UserDetailsService {
 
     }
 
-
 }
+*/
