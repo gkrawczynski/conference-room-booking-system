@@ -3,7 +3,7 @@ package com.betse.entity;
 import lombok.Data;
 import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
-
+import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
 import java.util.List;
 
@@ -12,21 +12,27 @@ import java.util.List;
 @ToString
 @Table(name = "Users")
 public class User {
-    @Column(columnDefinition="TEXT", nullable = false)
-    @Length(max=50)
-    private String name;
-    @Column(columnDefinition="TEXT", length = 100, nullable = false)
-    @Length(max=100)
-    private String surname;
     @Id
-    @Column(columnDefinition="TEXT", length = 100, nullable = false, unique = true)
+    @Column(unique = true)
     @Length(max=100)
     private String login;
-    @Column(columnDefinition="TEXT", length = 100, nullable = false)
+
+    @NotEmpty
+    @Length(max=50)
+    private String name;
+
+    @NotEmpty
+    @Length(max=100)
+    private String surname;
+
+    @NotEmpty
     @Length(min=6, max=100)
     private String password;
 
-    @OneToMany
+}
+
+/*
+@OneToMany
     @JoinColumn(name = "room_name")
     private List<Room> rooms;
-}
+ */

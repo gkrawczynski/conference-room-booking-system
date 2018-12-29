@@ -1,5 +1,5 @@
 package com.betse.service;
-
+/*
 import com.betse.entity.User;
 
 public interface UserService {
@@ -10,3 +10,4 @@ public interface UserService {
 
     void saveUser(User user);
 }
+*/

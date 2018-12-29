@@ -1,5 +1,5 @@
 package com.betse.storage;
-
+/*
 public class StorageFileNotFoundException extends StorageException {
 
     public StorageFileNotFoundException(String message){
@@ -10,3 +10,4 @@ public class StorageFileNotFoundException extends StorageException {
         super(message, cause);
     }
 }
+*/

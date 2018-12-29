@@ -1,5 +1,5 @@
 package com.betse.controller;
-
+/*
 import com.betse.entity.User;
 import com.betse.repository.UserRepository;
 import com.betse.storage.StorageService;
@@ -67,3 +67,4 @@ public class UserController {
         return "redirect:/user/list";
     }
 }
+*/

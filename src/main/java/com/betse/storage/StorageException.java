@@ -1,5 +1,5 @@
 package com.betse.storage;
-
+/*
 public class StorageException extends RuntimeException {
 
     public StorageException(String message){
@@ -10,3 +10,4 @@ public class StorageException extends RuntimeException {
         super(message, cause);
     }
 }
+*/

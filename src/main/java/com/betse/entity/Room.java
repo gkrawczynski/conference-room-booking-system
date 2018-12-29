@@ -1,5 +1,5 @@
 package com.betse.entity;
-
+/*
 import lombok.Data;
 import lombok.ToString;
 import org.hibernate.annotations.Type;
@@ -20,10 +20,10 @@ public class Room {
     private String name;
     @Column(columnDefinition="TEXT")
     @Length(max=256)
-    private String locationDescription;
+    private String location;
     @Column(nullable = false)
     @Size(max=100)
-    private Integer numberOfSeats;
+    private Integer seats;
     @Column
     @Type(type="yes_no, default = no")
     private boolean projector;
@@ -32,3 +32,4 @@ public class Room {
     private String phoneNumber;
 
 }
+*/

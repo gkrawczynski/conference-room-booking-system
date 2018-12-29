@@ -1,5 +1,5 @@
 package com.betse.config;
-
+/*
 import com.betse.service.SpringDataUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,3 +30,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().formLogin();
     }
 }
+*/
