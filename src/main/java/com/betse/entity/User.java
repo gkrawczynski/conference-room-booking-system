@@ -5,7 +5,6 @@ import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Data
@@ -13,12 +12,14 @@ import java.util.List;
 @Table(name = "Users")
 public class User {
     @Id
+    @NotEmpty
     @Column(unique = true)
     @Length(max=100)
     private String login;
 
     @NotEmpty
     @Length(max=50)
+    @Column(name = "user_name")
     private String name;
 
     @NotEmpty
