@@ -1,8 +1,8 @@
 package com.betse.controller;
-/*
+
 import com.betse.entity.User;
 import com.betse.repository.UserRepository;
-import com.betse.storage.StorageService;
+import com.betse.service.UserService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
@@ -13,19 +13,28 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
 
+    /* */
     private final UserRepository userRepository;
-    private final StorageService storageService;
 
-    public UserController(UserRepository userRepository, StorageService storageService){
+    private UserService userService;
+
+    public UserController(UserRepository userRepository){
         this.userRepository = userRepository;
-        this.storageService = storageService;
+        this.userService = userService;
     }
 
+    @GetMapping
+    public List<User> findAllUsers(){
+        return userService.findAllUsers();
+    }
+
+    /*
     @RequestMapping("/list")
     public String list(Model model){
         model.addAttribute("users", userRepository.findAll());
@@ -51,20 +60,5 @@ public class UserController {
         return "user/add";
     }
 
-    @PostMapping("/add")
-    public String addPersonPerform(@RequestParam("file") MultipartFile file, @ModelAttribute @Valid User user, BindingResult result, RedirectAttributes redirectAttributes){
-        if(result.hasErrors()){
-            return "user/add";
-        }
-        if(!file.isEmpty()){
-            storageService.store(file);
-        }
-
-        redirectAttributes.addFlashAttribute("message", "User has been added.");
-
-        userRepository.save(user);
-
-        return "redirect:/user/list";
-    }
+    */
 }
-*/

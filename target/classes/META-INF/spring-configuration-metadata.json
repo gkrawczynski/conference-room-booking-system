@@ -1,0 +1,19 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.betse.storage.StorageProperties",
+      "name": "storage",
+      "type": "com.betse.storage.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.betse.storage.StorageProperties",
+      "defaultValue": "upload-dir",
+      "name": "storage.location",
+      "description": "Folder location for storing files",
+      "type": "java.lang.String"
+    }
+  ]
+}
